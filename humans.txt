@@ -3,7 +3,7 @@
 
 # TEAM
 
-    Marcel Stadelmann, Sputniks -- Developer
+    Marcel Stadelmann, Sputniks GmbH/Winterthur -- Developer
 
 # THANKS
 
