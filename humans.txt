@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Marcel Stadelmann, Sputniks -- Developer
 
 # THANKS
 
-    <name>
+   
 
 # TECHNOLOGY COLOPHON
 
