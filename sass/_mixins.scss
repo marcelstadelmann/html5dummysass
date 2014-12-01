@@ -1,0 +1,31 @@
+/* ==========================================================================
+   Mixins
+   ========================================================================== */
+@mixin font-size($size: 1.6) {
+	font-size: ($size * 10) + px;
+	font-size: $size + rem;
+}
+@mixin line-height($size: 1.6) {
+	line-height: ($size * 10) + px;
+	line-height: $size + rem;
+}
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+
+@mixin boxShadow($x: 5px, $y: 5px, $blur: 5px, $spread: 0px, $color: #000) {
+	-webkit-box-shadow: $x $y $blur $spread $color;
+	-moz-box-shadow: $x $y $blur $spread $color;
+	-ms-box-shadow: $x $y $blur $spread $color;
+	-o-box-shadow: $x $y $blur $spread $color;
+	box-shadow: $x $y $blur $spread $color;
+}
+
+@mixin opacity($x: 0.5, $y:60) {
+	opacity: $x;
+    filter: alpha(opacity=$y); /* For IE8 and earlier */
+}
