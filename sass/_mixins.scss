@@ -29,3 +29,8 @@
 	opacity: $x;
     filter: alpha(opacity=$y); /* For IE8 and earlier */
 }
+
+@mixin my-web-font() {
+    font-family: "My Web Font", sans-serif;
+    font-weight: bold;
+}
