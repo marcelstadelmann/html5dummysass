@@ -3,11 +3,11 @@
    ========================================================================== */
 @mixin font-size($size: 1.6) {
 	font-size: ($size * 10) + px;
-	font-size: $size + rem;
+	//font-size: $size + rem;
 }
 @mixin line-height($size: 1.6) {
 	line-height: ($size * 10) + px;
-	line-height: $size + rem;
+	//line-height: $size + rem;
 }
 @mixin transition($transition-property, $transition-time, $method) {
     -webkit-transition: $transition-property $transition-time $method;
@@ -33,4 +33,22 @@
 @mixin my-web-font() {
     font-family: "My Web Font", sans-serif;
     font-weight: bold;
+}
+
+@mixin smartphone {
+	@media screen and (min-width: 500px) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media screen and (min-width: 700px) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media screen and (min-width: 1000px) {
+		@content;
+	}
 }
